@@ -22,7 +22,7 @@ body {
   background-color: chocolate;
   background-image: linear-gradient(315deg, #ff9933 0%, #fff 50%, #008000);
   box-shadow: 0 0 15px #000;
-  width: 500px;
+  width: 750px;
   border-radius: 15px;
   overflow: hidden;
 }
