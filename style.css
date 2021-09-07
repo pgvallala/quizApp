@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital@1&display=swap");
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(247, 237, 196);
+    font-family: "Besley", serif;
+    margin: auto;
+    display: flex;
+    padding-top: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .quiz-container {
+      background-color: chocolate;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 15px #000;
+      width: 500px;
+      border-radius: 15px;
+      overflow: hidden;
+}
+
+.quiz-header {
+    padding: 4rem;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+ul {
+    list-style-type: lower-latin;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 0.6rem 0;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
