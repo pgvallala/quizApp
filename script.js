@@ -1,6 +1,6 @@
 const quizData = [
   {
-    question: "The word 'Sathyameva Jayate' is taken from?",
+    question: "1. The word 'Sathyameva Jayate' is taken from?",
     a: "Yajur Veda",
     b: "Atharva Veda",
     c: "Mundaka Upanishad",
@@ -9,7 +9,7 @@ const quizData = [
   },
 
   {
-    question: "Dandia is a popular dance of ?",
+    question: "2. Dandia is a popular dance of ?",
     a: "Punjab",
     b: "Gujarat",
     c: "Telangana",
@@ -18,7 +18,7 @@ const quizData = [
   },
   {
     question:
-      "The Rath Yatra at Puri is celebrated in honour of which Hindu deity ?",
+      "3. The Rath Yatra at Puri is celebrated in honour of which Hindu deity ?",
     a: "Rama",
     b: "Jaganath",
     c: "Shiva",
@@ -27,7 +27,7 @@ const quizData = [
   },
   {
     question:
-      "Which one of the following is not a feature of North Indian temple architecture ?",
+      "4. Which one of the following is not a feature of North Indian temple architecture ?",
     a: "Sikara",
     b: "Garbha Gudi",
     c: "Gopuram",
@@ -37,7 +37,7 @@ const quizData = [
 
   {
     question:
-      "Kalchakra ceremony is associated with which of the following ceremonies ?",
+      "5. Kalchakra ceremony is associated with which of the following ceremonies ?",
     a: "Hinduism",
     b: "Buddhism",
     c: "Jainism",
@@ -47,7 +47,7 @@ const quizData = [
 
   {
     question:
-      "Which of the following places is famous for Chikankari work, which is a traditional art of embroidery ?",
+      "6. Which of the following places is famous for Chikankari work, which is a traditional art of embroidery ?",
     a: "Lucknow",
     b: "Hyderabad",
     c: "Jaipur",
@@ -57,7 +57,7 @@ const quizData = [
 
   {
     question:
-      "Historic Chandragiri Fort is located in which of the following states ?",
+      "7. Historic Chandragiri Fort is located in which of the following states ?",
     a: "Telangana",
     b: "Karnataka",
     c: "Maharastra",
@@ -66,7 +66,7 @@ const quizData = [
   },
 
   {
-    question: "Who composed the famous song ‘Sare Jahan SeAchha’ ?",
+    question: "8. Who composed the famous song ‘Sare Jahan SeAchha’ ?",
     a: "Jaidev",
     b: "Mohammad Iqbal",
     c: "Bankim Chandra Chattopadhyay",
@@ -76,7 +76,7 @@ const quizData = [
 
   {
     question:
-      "Which of the following combinations of the States and the festivals mainly celebrated there is not correct ?",
+      "9. Which of the following combinations of the States and the festivals mainly celebrated there is not correct ?",
     a: "Uttar Pradesh – Krishna Janmashtami",
     b: "Maharashtra – Ganesh Chaturthi",
     c: "Gujarat – Durga Puja",
@@ -86,7 +86,7 @@ const quizData = [
 
   {
     question:
-      "Which one of the following manuscript is included in the UNESCO’s Memory of World Register ?",
+      "10. Which one of the following manuscript is included in the UNESCO’s Memory of World Register ?",
     a: "Rig Veda",
     b: "Ramayana",
     c: "Mahabaratha",
@@ -96,7 +96,7 @@ const quizData = [
 
   {
     question:
-      "Apart from India, in which of the following two countries, Tamil is an official language ?",
+      "11. Apart from India, in which of the following two countries, Tamil is an official language ?",
     a: "Mauritius and Malaysia",
     b: "Malaysia and Indonesia",
     c: "Sri Lanka and Mauritius",
@@ -152,9 +152,12 @@ submitBtn.addEventListener("click", () => {
 
   if (answer) {
     if (answer === quizData[currentQuiz].correct) {
+      
       score++;
+    } else {
+        window.alert(quizData[currentQuiz].correct);
     }
-
+    
     currentQuiz++;
 
     if (currentQuiz < quizData.length) {
@@ -163,7 +166,11 @@ submitBtn.addEventListener("click", () => {
       quiz.innerHTML = `
               <h2>You answered ${score}/${quizData.length} questions correctly</h2>
   
-              <button onclick="location.reload()">wanna try again?</button>
+              <button onclick="location.reload()">Correct answers are: <br> 1 - Mundaka Upanishad, 2 - Gujarat,
+              3 - Jaganath, 4 - Gopuram, 5 - Buddhism, 6 - Lucknow, 7 - Andhra Pradesh, 
+              8 - Mohammad Iqbal, 9 - Gujarat – Durga Puja, 10 - Rig Veda, 11 - Sri Lanka and Singapore</button>
+
+              
           `;
     }
   }
