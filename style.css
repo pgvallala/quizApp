@@ -9,7 +9,7 @@
     font-family: "Besley", serif;
     margin: auto;
     display: flex;
-    padding-top: 3rem;
+    
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -19,8 +19,7 @@
 
   .quiz-container {
       background-color: chocolate;
-      align-items: center;
-      justify-content: center;
+      
       box-shadow: 0 0 15px #000;
       width: 500px;
       border-radius: 15px;
@@ -28,7 +27,7 @@
 }
 
 .quiz-header {
-    padding: 4rem;
+    padding: 2.5rem;
 }
 
 h2 {
@@ -51,3 +50,24 @@ ul li label {
     cursor: pointer;
 }
 
+button {
+    background-color: rgb(112, 52, 9);
+    color: cornsilk;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1rem;
+}
+
+button:hover {
+    background-color: rgb(252, 98, 9);
+}
+
+button:focus {
+    outline: none;
+    background-color: rgb(240, 88, 33);
+    box-shadow: 0 0 10px black;
+}
