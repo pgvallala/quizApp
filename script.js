@@ -1,38 +1,108 @@
 const quizData = [
   {
-    question: "What is CSS?",
-    a: "Computer Security Systems",
-    b: "Captivating Style Sheet",
-    c: "Cascading Style Sheet",
-    d: "Central Suspended State",
+    question: "The word 'Sathyameva Jayate' is taken from?",
+    a: "Yajur Veda",
+    b: "Atharva Veda",
+    c: "Mundaka Upanishad",
+    d: "Sam Veda",
     correct: "c",
   },
 
   {
-    question: "Which language runs in a web browser?",
-    a: "Java",
-    b: "C",
-    c: "Python",
-    d: "JavaScript",
-    correct: "d",
-  },
-  {
-    question: "What does CSS stand for?",
-    a: "Central Style Sheets",
-    b: "Cascading Style Sheets",
-    c: "Cascading Simple Sheets",
-    d: "Cars SUVs Sailboats",
+    question: "Dandia is a popular dance of ?",
+    a: "Punjab",
+    b: "Gujarat",
+    c: "Telangana",
+    d: "Maharastra",
     correct: "b",
   },
   {
-    question: "What does HTML stand for?",
-    a: "Hypertext Markup Language",
-    b: "Hypertext Markdown Language",
-    c: "Hyperloop Machine Language",
-    d: "Helicopters Terminals Motorboats Lamborginis",
+    question:
+      "The Rath Yatra at Puri is celebrated in honour of which Hindu deity ?",
+    a: "Rama",
+    b: "Jaganath",
+    c: "Shiva",
+    d: "Karthikeya",
+    correct: "b",
+  },
+  {
+    question:
+      "Which one of the following is not a feature of North Indian temple architecture ?",
+    a: "Sikara",
+    b: "Garbha Gudi",
+    c: "Gopuram",
+    d: "Pradakshinam",
+    correct: "c",
+  },
+
+  {
+    question:
+      "Kalchakra ceremony is associated with which of the following ceremonies ?",
+    a: "Hinduism",
+    b: "Buddhism",
+    c: "Jainism",
+    d: "Islam",
+    correct: "b",
+  },
+
+  {
+    question:
+      "Which of the following places is famous for Chikankari work, which is a traditional art of embroidery ?",
+    a: "Lucknow",
+    b: "Hyderabad",
+    c: "Jaipur",
+    d: "Mysore",
     correct: "a",
   },
- 
+
+  {
+    question:
+      "Historic Chandragiri Fort is located in which of the following states ?",
+    a: "Telangana",
+    b: "Karnataka",
+    c: "Maharastra",
+    d: "Andhra Pradesh",
+    correct: "d",
+  },
+
+  {
+    question: "Who composed the famous song ‘Sare Jahan SeAchha’ ?",
+    a: "Jaidev",
+    b: "Mohammad Iqbal",
+    c: "Bankim Chandra Chattopadhyay",
+    d: "Rabindranath Tagore",
+    correct: "b",
+  },
+
+  {
+    question:
+      "Which of the following combinations of the States and the festivals mainly celebrated there is not correct ?",
+    a: "Uttar Pradesh – Krishna Janmashtami",
+    b: "Maharashtra – Ganesh Chaturthi",
+    c: "Gujarat – Durga Puja",
+    d: "Rajasthan – Gangaur",
+    correct: "c",
+  },
+
+  {
+    question:
+      "Which one of the following manuscript is included in the UNESCO’s Memory of World Register ?",
+    a: "Rig Veda",
+    b: "Ramayana",
+    c: "Mahabaratha",
+    d: "Bhagavath Gita",
+    correct: "a",
+  },
+
+  {
+    question:
+      "Apart from India, in which of the following two countries, Tamil is an official language ?",
+    a: "Mauritius and Malaysia",
+    b: "Malaysia and Indonesia",
+    c: "Sri Lanka and Mauritius",
+    d: "Sri Lanka and Singapore",
+    correct: "d",
+  },
 ];
 
 const quiz = document.getElementById("quiz");
@@ -91,10 +161,10 @@ submitBtn.addEventListener("click", () => {
       loadQuiz();
     } else {
       quiz.innerHTML = `
-            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-
-            <button onclick="location.reload()">Reload</button>
-        `;
+              <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+  
+              <button onclick="location.reload()">wanna try again?</button>
+          `;
     }
   }
 });
